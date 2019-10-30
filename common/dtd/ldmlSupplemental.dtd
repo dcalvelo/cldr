@@ -10,7 +10,7 @@ Except as contained in this notice, the name of a copyright holder shall not be 
     $Revision$
 -->
 
-<!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope?, languageGroups? ) >
+<!ELEMENT supplementalData ( version, generation?, cldrVersion?, currencyData?, territoryContainment?, subdivisionContainment?, languageData?, territoryInfo?, postalCodeData?, calendarData?, calendarPreferenceData?, weekData?, timeData?, measurementData?, unitPreferenceData?, timezoneData?, characters?, transforms?, metadata?, codeMappings?, parentLocales?, likelySubtags?, metazoneInfo?, plurals?, telephoneCodeData?, numberingSystems?, bcp47KeywordMappings?, gender?, references?, languageMatching?, dayPeriodRuleSet*, metaZones?, primaryZones?, windowsZones?, coverageLevels?, idValidity?, rgScope?, languageGroups?, gramaticalFeatures?, grammaticalFeatureValues? ) >
 
 <!ELEMENT version EMPTY >
     <!--@METADATA-->
@@ -1154,3 +1154,14 @@ Except as contained in this notice, the name of a copyright holder shall not be 
 <!ELEMENT languageGroup ( #PCDATA ) >
 <!ATTLIST languageGroup parent NMTOKEN #REQUIRED >
 	<!--@MATCH:validity/language-->
+
+<!-- # Grammatical Features -->
+
+<!ELEMENT grammaticalFeatures ( grammaticalFeatureValues* ) >
+<!ATTLIST grammaticalFeatures targets NMTOKENS #REQUIRED >
+<!ATTLIST grammaticalFeatures locales NMTOKENS #REQUIRED >
+	<!--@MATCH:validity/language-->
+
+<!ELEMENT grammaticalFeatureValues EMPTY>
+<!ATTLIST grammaticalFeatureValues type ( case | gender | definiteness | state) #REQUIRED >
+<!ATTLIST grammaticalFeatureValues value NMTOKENS #REQUIRED >

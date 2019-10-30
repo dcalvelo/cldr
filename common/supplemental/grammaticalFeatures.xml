@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
+<!--
+Copyright © 2019 Unicode, Inc.
+CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
+For terms of use, see http://www.unicode.org/copyright.html
+-->
+
+<!--
+
+These are the grammatical features that are used in each locale to mark inflected forms of nouns.
+
+CLDR textual items may be tagged with grammatical features when these are needed to ensure that the
+correct forms are used in context.
+
+For instance, in Russian "Уменьши яркость света до 10 процентов" ("dim the light to 10 percent"),
+the 'percent' unit must be expressed in plural and in the genitive case, whereas "1%" would be
+expressed in different cases depending on the context. The case usage is implicit in short form
+"10%", but the full form requires the grammatical variant marked by case and number to be expressed
+correctly.
+
+In romance languages, nouns such as unit names have an intrinsic grammatical gender, which
+propagates by agreement to other parts of sentence. For example, in French "2 jours sont passés"
+("two days have gone by") expresses the participle "passés" in the plural masculine form, whereas
+"2 heures sont passées" requires the participle in the plural feminine form to agree with the
+grammatical gender of the unit "h", even when short forms are used.
+
+Note that plural status is not included here: CLDR handles plurals with special categories in
+plurals.xml and ordinals.xml. See those files and the LDML spec for more information.
+
+-->
+
+<supplementalData>
+  <version number="$Revision: 1 $"/>
+  <grammaticalFeatures targets="nominal" locales="en fil ja ms th tl vi zh">
+    <!-- No grammatical features (number is not considered). -->
+    <!-- Note both fil and tl are included -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="es fr it pt">
+    <grammaticalFeatureValues type="gender" value="masculine feminine"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="nl">
+    <grammaticalFeatureValues type="gender" value="common neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="te">
+    <grammaticalFeatureValues type="case" value="nominative oblique accusative dative locative instrumental"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="ta">
+    <grammaticalFeatureValues type="case" value="nominative genitive accusative dative locative instrumental ablative vocative"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="tr">
+    <grammaticalFeatureValues type="case" value="nominative genitive dative accusative instrumental ablative locative"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="id">
+    <grammaticalFeatureValues type="definiteness" value="definite indefinite"/>
+    <!-- Indonesian nouns inflect in a possessive expression, with agreement on person. -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="de">
+    <grammaticalFeatureValues type="case" value="nominative genitive dative accusative"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="hi pa ur">
+    <grammaticalFeatureValues type="case" value="nominative oblique"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="ml">
+    <grammaticalFeatureValues type="case" value="nominative genitive dative accusative instrumental locative comitative locativecopulative sociative"/>
+    <grammaticalFeatureValues type="gender" value="animate inanimate feminine neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="mr">
+    <grammaticalFeatureValues type="case" value="nominative oblique accusative dative ergative locative ablative genitive"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine neuter"/>
+    <!-- Genitive agrees in gender, case and number with the antecedent. -->
+    <!-- Oblique can be further inflected by semantics-defining suffixes. -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="gu kn">
+    <grammaticalFeatureValues type="case" value="nominative genitive accusative dative locative instrumental vocative"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="he">
+    <grammaticalFeatureValues type="gender" value="masculine feminine"/>
+    <grammaticalFeatureValues type="state" value="definite indefinite construct"/>
+    <!-- Note that Hebrew nouns also inflect in possessives, with agreement on person, number and gender -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="ar">
+    <grammaticalFeatureValues type="case" value="nominative genitive accusative"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine"/>
+    <grammaticalFeatureValues type="state" value="definite indefinite construct"/>
+    <!-- Note that Arabic nouns also inflect in possessives, with agreement on person, number and gender -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="bn">
+    <grammaticalFeatureValues type="case" value="nominative accusative genitive locative"/>
+    <grammaticalFeatureValues type="definiteness" value="definite indefinite"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine"/>
+    <!-- Gender is only used for expressing human activities/professions. -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="da">
+    <grammaticalFeatureValues type="case" value="nominative genitive"/>
+    <grammaticalFeatureValues type="definiteness" value="definite indefinite unspecified"/>
+    <grammaticalFeatureValues type="gender" value="common neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="sv">
+    <grammaticalFeatureValues type="case" value="nominative genitive"/>
+    <grammaticalFeatureValues type="definiteness" value="definite indefinite"/>
+    <grammaticalFeatureValues type="gender" value="common neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="nb ro">
+    <grammaticalFeatureValues type="gender" value="masculine feminine neuter"/>
+    <grammaticalFeatureValues type="case" value="nominative genitive"/>
+    <grammaticalFeatureValues type="definiteness" value="definite indefinite"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="cs sk">
+    <grammaticalFeatureValues type="case" value="nominative genitive dative accusative instrumental vocative locative"/>
+    <grammaticalFeatureValues type="gender" value="animate inanimate feminine neuter"/>
+    <!-- Czech also inflects in polarity (negation is a prefix) -->
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="ru">
+    <grammaticalFeatureValues type="case" value="nominative genitive dative accusative instrumental prepositional partitive vocative locative"/>
+    <grammaticalFeatureValues type="gender" value="masculine feminine neuter"/>
+  </grammaticalFeatures>
+  <grammaticalFeatures targets="nominal" locales="pl">
+    <grammaticalFeatureValues type="case" value="nominative genitive dative accusative instrumental prepositional partitive vocative locative"/>
+    <grammaticalFeatureValues type="gender" value="animate inanimate personal feminine neuter"/>
+  </grammaticalFeatures>
+</supplementalData>
