@@ -13,7 +13,7 @@
 <supplementalData>
 	<version number="$Revision$"/>
 	<idValidity>
-		<id type='language' idStatus='regular'>		<!-- 7908 items -->
+		<id type='language' idStatus='regular'>		<!-- 7909 items -->
 			aa aaa~i aak~l aan~q aas~x aaz
 			ab aba~j abl~z
 			aca~b acd~f ach~i ack~n acp~z
@@ -333,7 +333,7 @@
 			my myb~c mye~h myj~p myr~s myu~z
 			mza~e mzg~z
 			na naa~c nae~t naw~z
-			nba~e nbg~k nbm~w nby
+			nb nba~e nbg~k nbm~w nby
 			nca~o ncq~u ncx ncz
 			nd nda~d ndf~n ndp~z
 			ne nea~k nem~o neq~z
@@ -621,7 +621,7 @@
 			mis mul
 			zxx
 		</id>
-		<id type='language' idStatus='deprecated'>		<!-- 265 items -->
+		<id type='language' idStatus='deprecated'>		<!-- 264 items -->
 			aam adp agp ais aju als aoh arb asd aue ayr ayx~y azj
 			baz bbz bcc bcl bgm bh bhk bjd bjq bkb bmy bpb btb btl bxk bxr bxx byy
 			cbe cbh cca ccq cdg cjr cka cld cmk cmn cnr coy cqu cum cwd
@@ -635,7 +635,7 @@
 			kbf kdv kgc~d kgh khk kjf kmr knc kng knn koj kox kpp kpv krm ktr kvs kwq kxe kxl kxu kzh kzj kzt
 			lba lbk leg lii llo lmm lmz lsg lvs
 			meg mgx mhh mhr mja mld mnk mnt mo mof mst mup mwd mwj mwx~y myd myi myq myt
-			nad nb nbf nbx ncp nln nlr nns nnx noo npi nts nxu
+			nad nbf nbx ncp nln nlr nns nnx noo npi nts nxu
 			ojg ome ory oun
 			pbu pbz pcr pes pgy plp plt pmc pmu pnb pod ppa ppr prb prs pry puk puz
 			quz

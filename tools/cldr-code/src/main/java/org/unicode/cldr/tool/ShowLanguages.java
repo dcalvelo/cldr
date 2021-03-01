@@ -131,9 +131,6 @@ public class ShowLanguages {
             new ChartUnitConversions().writeChart(SUPPLEMENTAL_INDEX_ANCHORS);
             new ChartUnitPreferences().writeChart(SUPPLEMENTAL_INDEX_ANCHORS);
         }
-        if (ToolConstants.CHART_VERSION.compareTo("37") >= 0) {
-            new ChartGrammaticalForms().writeChart(SUPPLEMENTAL_INDEX_ANCHORS);
-        }
         // since we don't want these listed on the supplemental page, use null
 
         new ShowPlurals().printPlurals(english, null, pw, cldrFactory);
@@ -868,7 +865,7 @@ public class ShowLanguages {
             localeAliasInfo.put("unit", new TreeMap<String, String>());
             localeAliasInfo.put("usage", new TreeMap<String, String>());
 
-            localeAliasInfo.get("language").put("nb", "no");
+            //localeAliasInfo.get("language").put("nb", "no");
             localeAliasInfo.get("language").put("zh_CN", "zh_Hans_CN");
             localeAliasInfo.get("language").put("zh_SG", "zh_Hans_SG");
             localeAliasInfo.get("language").put("zh_TW", "zh_Hant_TW");

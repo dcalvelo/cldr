@@ -3422,7 +3422,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 						<era type="180">분쇼 (1466 ~ 1467)</era>
 						<era type="181">오닌 (1467 ~ 1469)</era>
 						<era type="182">분메이 (1469 ~ 1487)</era>
-						<era type="183">조쿄 (1487 ~ 1489)&lt;</era>
+						<era type="183">조쿄 (1487 ~ 1489)</era>
 						<era type="184">엔토쿠 (1489 ~ 1492)</era>
 						<era type="185">메이오 (1492 ~ 1501)</era>
 						<era type="186">분키 (1501 ~ 1504)</era>
@@ -4175,9 +4175,6 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<zone type="America/Santa_Isabel">
 				<exemplarCity>산타 이사벨</exemplarCity>
 			</zone>
-			<zone type="Pacific/Honolulu">
-				<exemplarCity>호놀룰루</exemplarCity>
-			</zone>
 			<zone type="Etc/UTC">
 				<long>
 					<standard>협정 세계시</standard>
@@ -4297,11 +4294,11 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<zone type="Australia/Broken_Hill">
 				<exemplarCity>브로컨힐</exemplarCity>
 			</zone>
-			<zone type="Australia/Currie">
-				<exemplarCity>퀴리</exemplarCity>
-			</zone>
 			<zone type="Australia/Melbourne">
 				<exemplarCity>멜버른</exemplarCity>
+			</zone>
+			<zone type="Australia/Currie">
+				<exemplarCity>퀴리</exemplarCity>
 			</zone>
 			<zone type="Australia/Hobart">
 				<exemplarCity>호바트</exemplarCity>
@@ -5334,6 +5331,9 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			</zone>
 			<zone type="America/Nome">
 				<exemplarCity>놈</exemplarCity>
+			</zone>
+			<zone type="Pacific/Honolulu">
+				<exemplarCity>호놀룰루</exemplarCity>
 			</zone>
 			<zone type="Pacific/Johnston">
 				<exemplarCity>존스톤</exemplarCity>
@@ -7765,7 +7765,7 @@ Warnings: All cp values have U+FE0F characters removed. See /annotationsDerived/
 			<currency type="XOF">
 				<displayName>서아프리카 CFA 프랑</displayName>
 				<displayName count="other">서아프리카 CFA 프랑</displayName>
-				<symbol draft="contributed">F&#x202f;CFA</symbol>
+				<symbol draft="contributed">F CFA</symbol>
 			</currency>
 			<currency type="XPD">
 				<displayName>팔라듐</displayName>
